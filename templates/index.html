@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web-Scrapping Kurs Yen 2019</title>
+</head>
+
+<body>
+    <!-- this for the box that countaints our plot -->
+    <div class="container-fluid"> 
+        <div class="jumbotron col-8 offset-2">
+            <h1 class="mb-2" style="color: royalblue; text-align: center;">Perubahan Kurs Yen pada Tahun 2019</h1>  <!-- You can change the title here -->
+            <div class="plot-area mt-4">
+                <p style="text-align:center;">
+                <!-- rendering plot, you can change the plot size here -->
+                <img src="data:image/png;base64,{{ result }}"  class="centerImage" alt="centered image"></p></div>
+            </div>
+        </div>
+        <!-- This for the data table -->
+        <div class="row">
+            <div class="col-8 offset-2">
+                {{  table | safe }}
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- This for the bootstrap -->
+<!-- Don't need to change these -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!-- This is the css -->
+<style>
+    body {
+        background: #f4f5f0;
+        font-size: 0.7rem;
+        font-family: Verdana;
+        
+    }
+</style>
+
+</html>
