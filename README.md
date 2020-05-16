@@ -15,7 +15,7 @@ Kali ini saya mengambil data dari sebuah web penukaran uang (money changer) untu
 Berikut tampilan website yang saya ambil :
 ![Tampilan Website](capture1.PNG)
 
-Kemudian dengan menggunakan fitur pada lbrary pandas dan matplolib saya membuat sebuah grafik dari tabel website tersebut. Hasilnua seperti ini:
+Kemudian dengan menggunakan fitur pada lbrary pandas dan matplolib saya membuat sebuah grafik dari tabel website tersebut. Hasilnya seperti ini:
 ![Grafik Hasil](capture2.PNG)
 
 Untuk melihat lebih jelas keseluruhan prosesnya, silahkan clone atau download semua file yang ada pada repositori ini. Selamat membaca!
