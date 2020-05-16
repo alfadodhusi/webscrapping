@@ -13,10 +13,10 @@ File README.md ini berisi informasi mengenai project web-scrapping ini. Silahkan
 Saya ingin mencoba untuk membagikan cara mengambil data dari API sebuah website dan kemudian menganalisanya. Tentunya bahasa pemrograman yang saya gunakan adalah Python dengan bantuan library beatifulsoup. 
 Kali ini saya mengambil data dari sebuah web penukaran uang (money changer) untuk mengesktrak informasi dari kurs Yen pada tahun 2019. 
 Berikut tampilan website yang saya ambil :
-![Tampilan Website](capture1.png)
+![Tampilan Website](capture1.PNG)
 
 Kemudian dengan menggunakan fitur pada lbrary pandas dan matplolib saya membuat sebuah grafik dari tabel website tersebut. Hasilnua seperti ini:
-![Tampilan Website](capture2.png)
+![Grafik Hasil](capture2.PNG)
 
 Untuk melihat lebih jelas keseluruhan prosesnya, silahkan clone atau download semua file yang ada pada repositori ini. Selamat membaca!
 
@@ -28,6 +28,6 @@ Semoga apa yang saya bagikan di github ini dapat membantu dan memberikan gambara
 
 ## Profil Saya
 Untuk mengenal saya lebih lanjut boleh klik link ini:
-[Rpubs](https://www.rpubs.com/alfado)
-[LinkedIn](https://www.linkedin.com/in/alfado)
-[Instagtam](https://www.instagram.com/_milalaa)
+* [Rpubs](https://www.rpubs.com/alfado)
+* [LinkedIn](https://www.linkedin.com/in/alfado)
+* [Instagtam](https://www.instagram.com/_milalaa)
