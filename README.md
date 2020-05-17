@@ -5,6 +5,7 @@
 File README.md ini berisi informasi mengenai project web-scrapping ini. Silahkan scroll ke bawah atau klik salah satu link di bawah ini :
 
 * [Apa yang saya lakukan?](#apa-yang-saya-lakukan)
+* [Apa yang saya butuhkan?](#apa-yang-saya-butuhkan)
 * [Siapa saya?](#siapa-saya)
 * [Profil saya](#profil-saya)
 
@@ -19,6 +20,19 @@ Kemudian dengan menggunakan fitur pada lbrary pandas dan matplolib saya membuat 
 ![Grafik Hasil](capture2.PNG)
 
 Untuk melihat lebih jelas keseluruhan prosesnya, silahkan clone atau download semua file yang ada pada repositori ini. Selamat membaca!
+
+## Apa yang saya butuhkan 
+* Python3 / Python2
+* Library Pandas
+* Library Requests
+* Library BeautifulSoup
+* Flask
+* Matplotlib
+
+Atau cukup dengan install file 'requirements.txt' pada halaman ini dengan cara download kemudian ketik di command prompt command berikut:  
+```python
+pip install -r requirements.txt
+```
 
 ## Siapa saya
 Nama saya adalah Alfado Dhusi Sembiring. Saya menempuh pendidikan strata 1 (S1) di program studi Teknik Material Institut Teknologi Bandung dan lulus pada tahun 2019. 
