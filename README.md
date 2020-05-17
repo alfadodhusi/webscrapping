@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ## Siapa saya
 Nama saya adalah Alfado Dhusi Sembiring. Saya menempuh pendidikan strata 1 (S1) di program studi Teknik Material Institut Teknologi Bandung dan lulus pada tahun 2019. 
 Dalam rangka menjalankan hobi saya, saat ini, saya sedang belajar dan mengulik hal-hal mengenai data science dengan menggunakan bahasa pemrogeaman Python dan R. Beberapa project seperti data wrangling, machine learning, dan data visualization dapat dicek di akun rpubs saya di bawah halaman ini.
-Semoga apa yang saya bagikan di github ini dapat membantu dan memberikan gambaran pada kalian pada segala sesuatu mengenai data sciece. 
+Semoga apa yang saya bagikan di github ini dapat membantu dan memberikan gambaran pada kalian pada segala sesuatu mengenai data science. 
 
 
 ## Profil Saya
