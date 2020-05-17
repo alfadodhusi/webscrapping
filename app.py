@@ -8,13 +8,13 @@ import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 
-def scrap(url = 'https://monexnews.com/kurs-valuta-asing.htm?kurs=JPY&searchdatefrom=01-01-2019&searchdateto=30-12-2019') :
+def scrap(url = 'https://monexnews.com/kurs-valuta-asing.htm?kurs=JPY&searchdatefrom=01-01-2019&searchdateto=31-12-2019') :
     #This is fuction for scrapping
-    url_get = requests.get('https://monexnews.com/kurs-valuta-asing.htm?kurs=JPY&searchdatefrom=01-01-2019&searchdateto=30-12-2019')
+    url_get = requests.get('https://monexnews.com/kurs-valuta-asing.htm?kurs=JPY&searchdatefrom=01-01-2019&searchdateto=31-12-2019')
     soup = BeautifulSoup(url_get.content,"html.parser")
     
     #Find the key to get the information
-    table = soup.find('table', attrs={'class':'table'}) 
+    table = soup.find('table', attrs={'class':'centerText newsTable2'}) 
     tr = table.find_all('tr') 
 
     temp = [] #initiating a tuple
@@ -71,7 +71,7 @@ def scrap(url = 'https://monexnews.com/kurs-valuta-asing.htm?kurs=JPY&searchdate
 
 @app.route("/")
 def index():
-    df = scrap('https://monexnews.com/kurs-valuta-asing.htm?kurs=JPY&searchdatefrom=01-01-2019&searchdateto=30-12-2019') #insert url here
+    df = scrap('https://monexnews.com/kurs-valuta-asing.htm?kurs=JPY&searchdatefrom=01-01-2019&searchdateto=31-12-2019') #insert url here
 
     #This part for rendering matplotlib
     fig = plt.figure(figsize=(5,2),dpi=300)
