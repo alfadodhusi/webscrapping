@@ -28,25 +28,25 @@ def scrap(url = 'https://monexnews.com/kurs-valuta-asing.htm?kurs=JPY&searchdate
         tanggal = row.find_all('td')[0].text
         tanggal = tanggal.strip() #for removing the excess whitespace
     
-        #get ask
-        ask = row.find_all('td')[1].text
-        ask = ask.strip() #for removing the excess whitespace
+        #get jual
+        jual = row.find_all('td')[1].text
+        jual = jual.strip() #for removing the excess whitespace
     
-        #get bid
-        bid = row.find_all('td')[2].text
-        bid = bid.strip() 
+        #get beli
+        beli = row.find_all('td')[2].text
+        beli = beli.strip() 
     
-        temp.append((tanggal,ask,bid)) 
+        temp.append((tanggal,jual,beli)) 
   
     temp = temp[::-1] #remove the header
 
-    df = pd.DataFrame(temp, columns = ('Tanggal','Ask','Bid')) #creating the dataframe
+    df = pd.DataFrame(temp, columns = ('Tanggal','Jual','Beli')) #creating the dataframe
    
    #data wranggling
    
    #change comma into dot
-    df.Ask.replace(to_replace = ',',value = '.',regex=True, inplace=True) 
-    df.Bid.replace(to_replace = ',',value = '.',regex=True, inplace=True) 
+    df.Jual.replace(to_replace = ',',value = '.',regex=True, inplace=True) 
+    df.Beli.replace(to_replace = ',',value = '.',regex=True, inplace=True) 
    
    #change language of month
     df.Tanggal.replace(to_replace = 'Oktober',value = 'October',regex=True, inplace=True) 
@@ -60,7 +60,7 @@ def scrap(url = 'https://monexnews.com/kurs-valuta-asing.htm?kurs=JPY&searchdate
     df.Tanggal.replace(to_replace = 'Mei',value = 'May',regex=True, inplace=True) 
    
     #change data type
-    df[['Ask','Bid']] = df[['Ask','Bid']].astype('float64')
+    df[['Jual','Beli']] = df[['Jual','Beli']].astype('float64')
     
     #create column month
     df['Bulan']=pd.to_datetime(df['Tanggal']).dt.strftime('%b').astype('category')
@@ -75,7 +75,7 @@ def index():
 
     #This part for rendering matplotlib
     fig = plt.figure(figsize=(5,2),dpi=300)
-    df.plot(kind = 'line', x = 'Bulan', y=['Ask','Bid'], title ='Kurs Yen Januari-Desember 2019')
+    df.plot(kind = 'line', x = 'Bulan', y=['Jual','Beli'], title ='Kurs Yen Januari-Desember 2019')
     
     #Do not change this part
     plt.savefig('plot1',bbox_inches="tight") 
