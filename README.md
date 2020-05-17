@@ -44,4 +44,4 @@ Semoga apa yang saya bagikan di github ini dapat membantu dan memberikan gambara
 Untuk mengenal saya lebih lanjut boleh klik link ini:
 * [Rpubs](https://www.rpubs.com/alfado)
 * [LinkedIn](https://www.linkedin.com/in/alfado)
-* [Instagtam](https://www.instagram.com/_milalaa)
+* [Instagram](https://www.instagram.com/_milalaa)
